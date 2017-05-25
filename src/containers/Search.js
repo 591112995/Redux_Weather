@@ -49,7 +49,7 @@ class SearchContainder extends Component{
     var that = this;
     if(!textInput.trim())
       return alert("请输入城市");
-    fetch("http://wthrcdn.etouch.cn/weather_mini?city="+textInput).then(function(response) {
+    fetch("https://wthrcdn.etouch.cn/weather_mini?city="+textInput).then(function(response) {
       if (response.status !== 200) {
         console.log("存在一个问题，状态码为：" + response.status);
         return;
